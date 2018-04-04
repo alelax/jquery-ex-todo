@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                display: flex;
+                width: 100vw;
+                height: 100vh;
+            }
+            .todo_container {
+                margin: auto;
+                padding: 10px;
+                width: 30%;
+                height: 600px;
+                border: 1px solid lightgray;
+            }
+            .todos {
+                font-size: 18px;
+                padding: 0 20px;
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+                border-bottom: 1px solid lightgray;
+            }
+            .delete {
+                float: right;
+                font-size: 25px;
+                cursor: pointer;
+            }
+            h3 {
+                color: red;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="todo_container">
+                <div class="todos">
+                    <h3>Elemento Cancellato</h3>
+                    <span class="text">Andare a fare la spesa</span>
+                    <span class="delete">X</span>
+                </div>
+                <div class="todos">
+                    <h3>Elemento Cancellato</h3>
+                    Fare lezione
+                    <span class="delete">X</span>
+                </div>
+                <div class="todos">
+                    <h3>Elemento Cancellato</h3>
+                    Fare gli esercizi
+                    <span class="delete">X</span>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+
+    </body>
+</html>
